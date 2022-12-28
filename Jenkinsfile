@@ -22,7 +22,7 @@ pipeline{
 
             }} catch {
                 echo "ERROR"
-            }
+            }}
         }
         stage('Deploying'){
             steps{
