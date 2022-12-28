@@ -13,13 +13,15 @@ pipeline{
             }
         }
             stage('Testing'){
-                steps{
+                try{steps{
                     bat "emulator  -avd pixel4 -verbose"
 //                    bat "emulator"
 //                    bat "adb wait-for-device shell getprop init.svc.bootanim"
 //                    bat "emulator -avd pixel4 -wipe-data"
 //                 bat "npx wdio"
 
+            }} catch {
+                echo "ERROR"
             }
         }
         stage('Deploying'){
