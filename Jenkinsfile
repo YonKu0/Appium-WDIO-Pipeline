@@ -20,7 +20,7 @@ pipeline{
 //                    bat "emulator -avd pixel4 -wipe-data"
 //                 bat "npx wdio"
 
-            }} catch {
+            }} catch (err) {
                 echo "ERROR"
             }
         }
