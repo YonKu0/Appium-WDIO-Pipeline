@@ -14,7 +14,7 @@ pipeline{
         }
         stage('Testing'){
             steps{
-                bat "npx wdio run"
+                bat "npx wdio"
 
             }
         }
