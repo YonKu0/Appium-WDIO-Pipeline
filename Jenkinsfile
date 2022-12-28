@@ -12,7 +12,6 @@ pipeline{
                 echo "Building the App"
             }
         }
-
             stage('Testing'){
                 steps{
                     bat "emulator  -avd pixel4 -verbose"
@@ -29,11 +28,11 @@ pipeline{
             }
         }
     
-    
 //     post{
 //         always{
 //             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
 //         }
 //     }
     
+}
 }
