@@ -17,8 +17,10 @@ pipeline{
 //                    bat "emulator"
 //                    bat "adb wait-for-device shell getprop init.svc.bootanim"
 //                    bat "emulator -avd pixel4 -wipe-data"
-//                    
-                bat "emulator  -avd pixel4 -verbose"
+//             
+                try {
+                    bat "emulator  -avd pixel4 -verbose"
+                 {
 //                 bat "npx wdio"
 
             }
