@@ -22,7 +22,7 @@ pipeline{
 //                 bat "npx wdio"
 
             }
-                catch (er) echo "Error"}
+                catch echo "Error"}
         }
         stage('Deploying'){
             steps{
