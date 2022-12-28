@@ -14,7 +14,8 @@ pipeline{
         }
             stage('Testing'){
                 steps{
-                    bat "emulator  -avd pixel4 -verbose"
+                        bat "emulator -avd pixel4 -ranchu"
+//                     bat "emulator  -avd pixel4 -verbose"
 //                    bat "emulator"
 //                    bat "adb wait-for-device shell getprop init.svc.bootanim"
 //                    bat "emulator -avd pixel4 -wipe-data"
