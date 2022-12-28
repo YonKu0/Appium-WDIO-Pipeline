@@ -14,6 +14,7 @@ pipeline{
         }
         stage('Testing'){
             steps{
+                bat "emulator -avd pixel4"
                 bat "npx wdio"
 
             }
