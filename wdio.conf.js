@@ -56,11 +56,10 @@ export const config = {
     
         platformName: "Android",
         "appium:automationName": "UiAutomator2",
-        "appium:deviceName": "Pixel",
-        // "appium:app": "instagram-264-0-0-0-99.apk",
+        "appium:deviceName": "Pixel4",
+        "appium:app": "instagram-264-0-0-0-99.apk",
         "appium:appPackage": "com.instagram.android",
-        "appium:platformVersion": "9",
-        "appium:appActivity": "com.instagram.mainactivity.MainActivity"
+        "appium:appActivity": "com.instagram.mainactivity.LauncherActivity"
     }],
     //
     // ===================
